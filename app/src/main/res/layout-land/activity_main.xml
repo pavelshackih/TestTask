@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              tools:context="com.testtask.app.MainActivity">
+
+    <TextView
+            android:id="@android:id/text1"
+            android:gravity="center_horizontal"
+            android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/sample_url"
+            android:id="@android:id/input"
+            android:inputType="textUri"
+            android:imeOptions="actionDone"
+            android:hint="@string/url_to_fetch"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@android:id/button1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/perform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

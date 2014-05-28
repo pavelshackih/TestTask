@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestTask</string>
+    <string name="hello_world">Enter url and press perform button</string>
+    <string name="perform">Perform</string>
+    <string name="url_to_fetch">Url to fetch</string>
+    <string name="url_cant_be_empty">Url can\'t be empty</string>
+    <string name="invalid_url">Invalid url</string>
+    <string name="result_is">Result is: %s</string>
+    <string name="sample_url">google.com</string>
+    <string name="warning">Warning</string>
+    <string name="please_check_network_connection">Please check network connection</string>
+
+</resources>
