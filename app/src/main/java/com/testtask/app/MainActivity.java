@@ -130,9 +130,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Text
         switch (state) {
             case NORMAL:
                 setProgressBarIndeterminateVisibility(Boolean.FALSE);
+                button.setEnabled(true);
                 break;
             case IN_PROGRESS:
                 setProgressBarIndeterminateVisibility(Boolean.TRUE);
+                button.setEnabled(true);
                 break;
             case NOT_CONNECTED:
                 setProgressBarIndeterminateVisibility(Boolean.FALSE);
@@ -157,6 +159,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Text
         if (data.containsError()) {
             //noinspection ThrowableResultOfMethodCallIgnored
             showWarning(getFragmentManager(), data.getError().getMessage());
+            getLoaderManager().restartLoader(UrlDataLoader.ID, Bundle.EMPTY, this);
         } else {
             if (data.getResult() == -1) {
                 text.setText(R.string.hello_world);
